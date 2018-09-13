@@ -91,6 +91,6 @@ fi
 
 build_cont=`readlink -f ./build_container.sh`
 
-DIRS=$(readlink -f $(dirname $(dirname $(find -path '*base/Dockerfile'))))
+DIRS=$(readlink -f $(dirname $(dirname $(find -path '*-18.04-base/Dockerfile'))))
 build_images "$DIRS"
 waitforimages
