@@ -75,6 +75,7 @@ cd -
 
 # base tests
 ./tests/container/vnc-test.sh $REPO:$DISTRO_TO_BUILD-base
+./tests/container/repo-test.sh $REPO:$DISTRO_TO_BUILD-base
 # builder tests
 ./tests/container/smoke.sh $REPO:$DISTRO_TO_BUILD-builder
 
